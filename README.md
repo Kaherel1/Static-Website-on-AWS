@@ -1,32 +1,26 @@
 ## Host a Static Website on AWS
 This project demonstrates the deployment of a static HTML web application on AWS, utilizing various AWS resources and services to ensure a secure, scalable, and fault-tolerant setup. The infrastructure is managed using a combination of AWS VPC, EC2, and other services. Below is a detailed guide to replicate this setup.
 
-## Table of Contents
-Architecture Overview
-Prerequisites
-Deployment Steps
-Step 1: Configure VPC and Subnets
-Step 2: Set Up Internet Gateway and NAT Gateway
-Step 3: Establish Security Groups
-Step 4: Launch EC2 Instances
-Step 5: Configure Application Load Balancer
-Step 6: Implement Auto Scaling Group
-Step 7: Set Up DNS with Route 53
-Script Details
+## Architecture Overview:
 
-## Architecture Overview
-The architecture consists of:
-
-VPC with Public and Private Subnets: Distributed across two Availability Zones for high availability.
-Internet Gateway: Enables internet access for instances in public subnets.
-Security Groups: Acts as a virtual firewall to control inbound and outbound traffic.
-EC2 Instances: Hosted in private subnets to enhance security.
-NAT Gateway: Allows instances in private subnets to access the internet.
-Application Load Balancer: Distributes incoming web traffic across multiple EC2 instances.
-Auto Scaling Group: Automatically manages the number of EC2 instances based on traffic demands.
-Certificate Manager: Secures application communications.
-Simple Notification Service (SNS): Sends notifications regarding activities within the Auto Scaling Group.
-Route 53: Manages DNS and domain registration.
+  -VPC with Public and Private Subnets: Distributed across two Availability Zones for high availability.
+  
+  -Internet Gateway: Enables internet access for instances in public subnets.
+  
+  -Security Groups: Acts as a virtual firewall to control inbound and outbound traffic.
+  
+  -EC2 Instances: Hosted in private subnets to enhance security.
+  -NAT Gateway: Allows instances in private subnets to access the internet.
+  
+  -Application Load Balancer: Distributes incoming web traffic across multiple EC2 instances.
+  
+  -Auto Scaling Group: Automatically manages the number of EC2 instances based on traffic demands.
+  
+  -Certificate Manager: Secures application communications.
+  
+  -Simple Notification Service (SNS): Sends notifications regarding activities within the Auto Scaling Group.
+  
+  -Route 53: Manages DNS and domain registration.
 
 ## Step 1: Configure VPC and Subnets
 Create a VPC with CIDR block (e.g., 10.0.0.0/16).
