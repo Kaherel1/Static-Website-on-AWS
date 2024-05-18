@@ -1,4 +1,4 @@
-Host a Static Website on AWS
+##Host a Static Website on AWS
 This project demonstrates the deployment of a static HTML web application on AWS, utilizing various AWS resources and services to ensure a secure, scalable, and fault-tolerant setup. The infrastructure is managed using a combination of AWS VPC, EC2, and other services. Below is a detailed guide to replicate this setup.
 
 Table of Contents
